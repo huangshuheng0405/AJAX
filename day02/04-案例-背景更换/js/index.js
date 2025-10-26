@@ -28,3 +28,17 @@ const bgUrl = localStorage.getItem('bgImg')
 console.log(bgUrl);
 // 本地有图片再赋值
 bgUrl && (document.body.style.backgroundImage = `url(${bgUrl})`)
+
+
+// fd.entries() //返回一个包含所有键值对的iterator对象
+
+// const fd = new FormData()
+// fd.append('a', '1')
+// fd.append('file', someFile)
+
+// for (const [k, v] of fd.entries()) {
+//   console.log(k, v)
+// }
+
+// entry  登录 条目
+

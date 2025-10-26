@@ -23,10 +23,16 @@
 
       document.querySelector('.upload').addEventListener('change', (e) => {
         // 获取图片文件
+        console.log(e.target.files);
+        
         console.log(e.target.files[0]);
         // 使用FormData
         const fd = new FormData()
+        
         fd.append('img', e.target.files[0])
+        console.log(fd);
+        
+
         axios({
           url: 'http://hmajax.itheima.net/api/uploadimg',
           method: 'post',
